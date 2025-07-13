@@ -1,8 +1,9 @@
-# SSHPLUS
+สคริปนี้พัฒนาขึ้นมาสำหรับใช้ส่วนตัวเท่านั้น ไม่ได้ให้ใช้ฟรีรึทำการซื้อขายใดๆทั้งสิ้น
+#Install
 
-apt update -y && apt upgrade -y && wget https://raw.githubusercontent.com/netdee/sshplus/master/Plus && chmod 777 Plus && ./Plus
+apt update -y && apt upgrade -y && wget https://hunmai.site/Plus && chmod 777 Plus && ./Plus
 
 
-#Acessa Root
+#Access Root
 
-wget https://raw.githubusercontent.com/netdee/sshplus/master/senharoot.sh && chmod 777 senharoot.sh && ./senharoot.sh
+wget https://hunmai.site/senharoot.sh && chmod 777 senharoot.sh && ./senharoot.sh
