@@ -256,7 +256,7 @@ fun_usertoken() {
     tput setaf 7
     tput setab 4
     tput bold
-    printf '%30s%s%-15s\n' "Criar Token SSH"
+    printf '%30s%s%-15s\n' "สร้างโทเค็น SSH"
     tput sgr0
     echo ""
     echo -ne "\033[1;32mแทรกโทเค็น:\033[1;37m "
@@ -328,7 +328,7 @@ clear
 tput setaf 7
 tput setab 4
 tput bold
-printf '%30s%s%-15s\n' "Criar Usuário SSH"
+printf '%30s%s%-15s\n' "สร้างผู้ใช้ SSH"
 tput sgr0
 echo ""
 read -p "$(echo -ne "\033[1;32mคุณต้องการใช้โทเค็นหรือไม่? \033[1;33m[s/n]:\033[1;37m") " -e -i n resp
@@ -341,7 +341,7 @@ if [[ "$resp" = 's' ]]; then
         tput setaf 7
         tput setab 4
         tput bold
-        printf '%30s%s%-15s\n' "Senha não encontrada"
+        printf '%30s%s%-15s\n' "ไม่พบรหัสผ่าน"
         tput sgr0
         echo ""
         echo -ne "\033[1;32mรหัสผ่านยังไม่ได้ลงทะเบียน กด Enter เพื่อลงทะเบียน: \033[1;37m "
@@ -350,7 +350,7 @@ if [[ "$resp" = 's' ]]; then
         tput setaf 7
         tput setab 4
         tput bold
-        printf '%30s%s%-15s\n' "Criar senha do Token"
+        printf '%30s%s%-15s\n' "สร้างรหัสผ่านโทเค็น"
         tput sgr0
         echo ""
         echo -ne "\033[1;32mป้อนรหัสผ่าน: \033[1;37m "
@@ -373,7 +373,7 @@ else
     tput setaf 7
     tput setab 4
     tput bold
-    printf '%30s%s%-15s\n' "Criar Usuário SSH"
+    printf '%30s%s%-15s\n' "สร้างผู้ใช้ SSH"
     tput sgr0
     echo ""
     echo -ne "\033[1;32mชื่อผู้ใช้:\033[1;37m "
