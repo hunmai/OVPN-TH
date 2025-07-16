@@ -3,9 +3,9 @@ IP=$(cat /etc/IP)
 if [ ! -d /etc/SSHPlus/userteste ]; then
 mkdir /etc/SSHPlus/userteste
 fi
-tput setaf 7 ; tput setab 4 ; tput bold ; printf '%30s%s%-15s\n' "Criar usuario teste" ; tput sgr0
+tput setaf 7 ; tput setab 4 ; tput bold ; printf '%30s%s%-15s\n' "สร้างผู้ใช้ทดสอบ" ; tput sgr0
 echo ""
-[ "$(ls -A /etc/SSHPlus/userteste)" ] && echo -e "\033[1;32mTeste Ativo!\033[1;37m" || echo -e "\033[1;31mNenhum test ativo!\033[0m"
+[ "$(ls -A /etc/SSHPlus/userteste)" ] && echo -e "\033[1;32mการทดสอบแบบแอคทีฟ!\033[1;37m" || echo -e "\033[1;31mไม่มีการทดสอบที่ใช้งานอยู่!\033[0m"
 echo ""
 for testeson in $(ls /etc/SSHPlus/userteste |sort |sed 's/.sh//g')
 do

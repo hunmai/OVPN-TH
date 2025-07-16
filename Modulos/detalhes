@@ -8,10 +8,10 @@ echo -e "\033[1;31m• \033[1;32mระบบปฏิบัติการ\033[
 echo ""
 name=$(cat /etc/lsb-release |grep DESCRIPTION |awk -F = {'print $2'})
 codename=$(cat /etc/lsb-release |grep CODENAME |awk -F = {'print $2'})
-echo -e "\033[1;33mNome: \033[1;37m$name"
-echo -e "\033[1;33mCodeName: \033[1;37m$codename"
-echo -e "\033[1;33mKernel: \033[1;37m$(uname -s)"
-echo -e "\033[1;33mKernel Release: \033[1;37m$(uname -r)"
+echo -e "\033[1;33mชื่อ: \033[1;37m$name"
+echo -e "\033[1;33mชื่อรหัส: \033[1;37m$codename"
+echo -e "\033[1;33mเคอร์เนล: \033[1;37m$(uname -s)"
+echo -e "\033[1;33mการปล่อยเคอร์เนล: \033[1;37m$(uname -r)"
 if [ -f /etc/os-release ]
 then
 devlike=$(cat /etc/os-release |grep LIKE |awk -F = {'print $2'})
@@ -71,5 +71,5 @@ echo ""
 PT=$(lsof -V -i tcp -P -n | grep -v "ESTABLISHED" |grep -v "COMMAND" | grep "LISTEN")
 for porta in `echo -e "$PT" | cut -d: -f2 | cut -d' ' -f1 | uniq`; do
     svcs=$(echo -e "$PT" | grep -w "$porta" | awk '{print $1}' | uniq)
-    echo -e "\033[1;33mServico \033[1;37m$svcs \033[1;33mPorta \033[1;37m$porta"
+    echo -e "\033[1;33mบริการ \033[1;37m$svcs \033[1;33mPort \033[1;37m$porta"
 done
